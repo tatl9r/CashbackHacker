@@ -6,7 +6,7 @@ import static org.testng.Assert.assertEquals;
 
 public class CashbackHackServiceTest {
     @Test
-    void howMuchToSpend() {
+    public void howMuchToSpend() {
         CashbackHackService service = new CashbackHackService();
         int amount = 100;
         int actual = service.remain(amount);
@@ -14,7 +14,7 @@ public class CashbackHackServiceTest {
         assertEquals(actual, expected);
     }
     @Test
-    void to0MuchToSpend() {
+    public void to0MuchToSpend() {
         CashbackHackService service = new CashbackHackService();
         int amount = 50;
         int actual = service.remain(amount);
@@ -22,7 +22,7 @@ public class CashbackHackServiceTest {
         assertEquals(actual, expected);
     }
     @Test
-    void tooSmallToSpend() {
+    public void tooSmallToSpend() {
         CashbackHackService service = new CashbackHackService();
         int amount = 950;
         int actual = service.remain(amount);
@@ -30,7 +30,7 @@ public class CashbackHackServiceTest {
         assertEquals(actual, expected);
     }
     @Test
-    void whenNoMoreToSpend(){
+    public void whenNoMoreToSpend(){
         CashbackHackService service = new CashbackHackService();
         int amount = 1000;
         int actual = service.remain(amount);
