@@ -1,8 +1,8 @@
 package ru.netology.service;
-import org.testng.annotations.Test;
-import org.testng.Assert;
+import org.junit.Test;
+import org.junit.Assert;
+import static org.junit.Assert.assertEquals;
 
-import static org.testng.Assert.assertEquals;
 
 public class CashbackHackServiceTest {
     @Test
